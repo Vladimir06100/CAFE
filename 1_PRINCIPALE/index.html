@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <nav class="navigation">
+      <!-- mettre un retour a la page principale sur le logo-->
+      <div class="logo">
+        <img class="img" src="avenir" alt="logo" />
+      </div>
+      <div class="buttons">
+        <button class="voirStock"><a class="aStock" href="page2.html">Voir le stock</a></button>
+        <button class="ajouter"><a class="aAjouter" href="#">Menu</a></button>
+      </div>
+    </nav>
+  </header>
+  <!-- BODY  -->
+  <section class="bienvenue">
+    <div class="divBienvenue">
+      <!--  juste si on veut modifier le decor -->
+      <div class="h1">
+        <h1>Bienvenue chez vous</h1>
+      </div>
+      <div class="h3">
+        <h3>Le resultat va vous choquer</h3>
+      </div>
+    </div>
+  </section>
+  <form>
+    <div class="container">
+      <div class="left">
+        <!-- LIGNE NOM -->
+        <div class="nomProduit">
+          <input class="inputProduit" type="text" placeholder="Nom de votre produit" value="RED BOULE" min="0">
+        </div>
+        <!-- LIGNE QTE DE PRODUITE  -->
+        <div class="qteDeProduit">
+          <input class="inputQteDeProduit" id="number" type="number" placeholder="Quantite de produit" value="100"
+            min="0">
+        </div>
+        <!-- LIGNE PRIX D'ACHAT HT -->
+        <div class="prixAchatHt">
+          <input class="inputPrixAchatHt" type="number" placeholder="Prix d'Achat HT" value="200" min="0">
+        </div>
+        <!-- LIGNE PRIX VENTE HT -->
+        <div class="prixVenteHt">
+          <input class="inputPrixVenteHt" type="number" placeholder="Prix Vente HT" value="300" min="0">
+        </div>
+      </div>
+      <div class="right">
+        <!-- LIGNE TVA -->
+        <div class="margeTVA">
+          <div class="">
+            <input class="choixTva" type="number" placeholder="Choissisez la TVA" value="0.2" min="0">
+          </div>
+        </div>
+        <!-- MARGE HT -->
+        <div class="margeHt">
+        </div>
+        <!-- LIGNE PRIX VENTE TTC -->
+        <div class="prixVenteTTC">
+        </div>
+        <!-- LIGNE CHOIX BOISSON ALCOOLISE -->
+        <div class="boissonAlcool">
+          <select class="choix" name="choixBoissons">
+            <option class="a" value="debutChoix">--Faite Votre Choix Type de boisson--</option>
+            <option class="avecAlcool" value="OUI">Avec Alcools</option>
+            <option class="sansAlcool" value="NON">Sans Alcools</option>
+            <option class="autres" value="Autres">Autres</option>
+          </select>
+        </div>
+        <!-- LIGNE DEGRE D'ALCOOL -->
+        <div class="degreAlcool">
+          <select name="choixDegreAlcool">
+            <option class="a">--Faite Votre Choix du Degre Alcool--</option>
+            <option value="5%">5%</option>
+            <option value="10%">10%</option>
+            <option value="45%">45%</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </form>
+  <div class="valEtAn buttons">
+    <button class="addStock"><a class="aStock" href="page2.html">Ajouter</a></button>
+    <button class="btnAjouter"><a class="aAjouter" href="">Annuler</a></button>
+  </div>
+  <!-- FOOTER -->
+  <footer class="mainFooter fixe">
+    <ul class="liensFooter">
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Newsletter</a></li>
+      <li><a href="#">Qui sommes-nous ?</a></li>
+      <li><a href="#">Applis mobile et tablette</a></li>
+      <li><a href="#">FAQ</a></li>
+    </ul>
+  </footer>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
