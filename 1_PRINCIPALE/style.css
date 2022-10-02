@@ -6,6 +6,8 @@
 #e8d9b7 ton sucré
 https://colorffy.com/palettes/ieBtfWEGQZguRkp6dHvW */
 
+@import url('https://fonts.googleapis.com/css2?family=News+Cycle&family=Playfair+Display&family=Raleway&family=Unna&family=Yaldevi:wght@300;500&display=swap');
+
 
 /* FINAL */
 /*retire la marge interieur entre le html et le body*/
@@ -14,8 +16,8 @@ html, body {
   padding:0;
   background: #f4f4f7;
 }
-
-/*debut du header barre de navigation*/
+  
+  /*debut du header barre de navigation*/
 .navigation{
   padding-top: 1em;
   display: flex;
@@ -23,12 +25,19 @@ html, body {
   background-color: #b38e81;
   box-shadow: 0px 3px 8px rgba(48, 48, 48, 0.295);
 }
-
+  
 .logo {
   padding-left: 5px;
-  height: 10vh;
+  height: 9vh;
+}
+  
+.buttons{
+  margin-right: 5em;
 }
 
+/* FIN NAVIGATION */
+
+/* GESTION DES BOUTONS*/
 button{
   background: #52352b;
   border-radius: 4px;
@@ -37,100 +46,127 @@ button{
   margin: 5px;
   border: 1px solid #52352b;
 }
-
+  
 button a{
-color: #f4f4f7;
+  color: #f4f4f7;
 }
-
+  
 button:hover{
   background: rgb(59, 25, 25);;
   color: white;
 }
-
+  
 a:link { 
-text-decoration:none; 
+  text-decoration:none; 
 } 
 
-/* FIN NAVIGATION */
+/* FIN BOUTON*/
+  
+.bienvenue{
+  height: 25vh;
+}
 
 /* PAGE 1 */
 /* H1 et H3 */
-
-.h1, .h3 {
-  margin: 10px;
+  
+h1{
   display: flex;
   justify-content: center;
+  margin-top: 1em;
+  font-size: 4rem;
   color: #52352b;
 }
 
+h2{
+  display: flex;
+  justify-content: center;
+  margin-top: -2em;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #52352b;
+
+}
+
+h3{
+  display: flex;
+  justify-content: center;
+  margin-top: 3em;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #52352b;
+}
+  
 /* Fin H1 et H3 */
 /* Formulaire */
-/*form {
-  display: flex;
-  flex-direction: column;
-  margin: 20px;
-  padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-}*/
+  
+  
+form input{
+  margin: 1em;
+  width: 30em;
+  padding: 10px;
+
+}
 
 .container{
-  margin-left: 2em;
-  margin-right: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-form input{
-  width: 30%;
-  margin: 10px 0;
-  padding: 10px;
-}
-
+  
 /* DEUX BUTTON VALIDER ET ANNULER */
 .valEtAn {
   display: flex;
+  margin-top: 3em;
+  margin-bottom: 3em;
   justify-content: center;
 }
-
+  
 /* FIN PAGE 1 */
 /* footer */
-.fixe {
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 10vh;
-  bottom: 0;
-  right: 0;
-  left: 0;
-/* en indiquant une largeur 100%
-on aura la largeur du parent #wrapper
-et le footer ne prendra pas toute la largeur
-de l'écran, le repère de la position fixe étant l'écran
-en indiquant left:0 et right:0
-on n'a pas besoin de spécifier la taille*/
-}
 
 .mainFooter {
   background-color: #b38e81;
   padding: 5px;
-  font-size: 1em;
-  color: #fff;
-  text-align: center;
+  height: 10em;
+}
+
+.liensFooter{
+  display: flex;
+  justify-content: center;
 }
 
 .liensFooter a {
+  display: flex;
   color: #fff;
   text-decoration: none;
+  font-family: "News Cycle";
 }
-
+  
 .liensFooter a:hover {
   color: #b1b3b6;
-}
 
+}
+  
 .liensFooter li {
   text-align: center;
   display: inline;
   padding: 0 1em;
 }
-
+  
 /*fin footer*/
+
+/*MEDIA SCREEN REPONSIVE ZRJFQEK RHERJ*/
+@media screen and (max-width: 500px) {
+
+  .mainFooter{
+    background-color: #b38e81;
+    padding: 5px;
+    height: 10em;
+}
+  }
+
+  .liensFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }

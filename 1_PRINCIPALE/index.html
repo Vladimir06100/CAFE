@@ -15,11 +15,11 @@
     <nav class="navigation">
       <!-- mettre un retour a la page principale sur le logo-->
       <div class="logo">
-        <img class="img" src="avenir" alt="logo" />
+        <img class="img" src="./cafelogo.png" alt="logo" width="200" height="50" />
       </div>
       <div class="buttons">
-        <button class="voirStock"><a class="aStock" href="page2.html">Voir le stock</a></button>
-        <button class="ajouter"><a class="aAjouter" href="#">Menu</a></button>
+        <button class="voirStock"><a class="aStock" href="page2.html">VOTRE STOCK</a></button>
+        <button class="ajouter"><a class="aAjouter" href="#">MENU</a></button>
       </div>
     </nav>
   </header>
@@ -27,40 +27,33 @@
   <section class="bienvenue">
     <div class="divBienvenue">
       <!--  juste si on veut modifier le decor -->
-      <div class="h1">
-        <h1>Bienvenue chez vous</h1>
-      </div>
-      <div class="h3">
-        <h3>Le resultat va vous choquer</h3>
-      </div>
+        <h1>BIENVENUE</h1>
+        <h2>Passez commande </h2>
     </div>
   </section>
   <form>
     <div class="container">
-      <div class="left">
         <!-- LIGNE NOM -->
         <div class="nomProduit">
-          <input class="inputProduit" type="text" placeholder="Nom de votre produit" value="RED BOULE" min="0">
+          <input class="inputProduit" type="text" placeholder="Nom de votre produit" value="" min="0">
         </div>
         <!-- LIGNE QTE DE PRODUITE  -->
         <div class="qteDeProduit">
-          <input class="inputQteDeProduit" id="number" type="number" placeholder="Quantite de produit" value="100"
+          <input class="inputQteDeProduit" id="number" type="number" placeholder="Quantite de produit" value=""
             min="0">
         </div>
         <!-- LIGNE PRIX D'ACHAT HT -->
         <div class="prixAchatHt">
-          <input class="inputPrixAchatHt" type="number" placeholder="Prix d'Achat HT" value="200" min="0">
+          <input class="inputPrixAchatHt" type="number" placeholder="Prix d'Achat HT" value="" min="0">
         </div>
         <!-- LIGNE PRIX VENTE HT -->
         <div class="prixVenteHt">
-          <input class="inputPrixVenteHt" type="number" placeholder="Prix Vente HT" value="300" min="0">
+          <input class="inputPrixVenteHt" type="number" placeholder="Prix Vente HT" value="" min="0">
         </div>
-      </div>
-      <div class="right">
         <!-- LIGNE TVA -->
         <div class="margeTVA">
           <div class="">
-            <input class="choixTva" type="number" placeholder="Choissisez la TVA" value="0.2" min="0">
+            <input class="choixTva" type="number" placeholder="Choissisez la TVA" value="" min="0">
           </div>
         </div>
         <!-- MARGE HT -->
@@ -73,8 +66,8 @@
         <div class="boissonAlcool">
           <select class="choix" name="choixBoissons">
             <option class="a" value="debutChoix">--Faite Votre Choix Type de boisson--</option>
-            <option class="avecAlcool" value="OUI">Avec Alcools</option>
-            <option class="sansAlcool" value="NON">Sans Alcools</option>
+            <option class="avecAlcool" value="Alcool">Avec Alcools</option>
+            <option class="sansAlcool" value="Sans Alcool">Sans Alcools</option>
             <option class="autres" value="Autres">Autres</option>
           </select>
         </div>
@@ -87,7 +80,6 @@
             <option value="45%">45%</option>
           </select>
         </div>
-      </div>
     </div>
   </form>
   <div class="valEtAn buttons">
@@ -97,10 +89,10 @@
   <!-- FOOTER -->
   <footer class="mainFooter fixe">
     <ul class="liensFooter">
-      <li><a href="#">Contact</a></li>
-      <li><a href="#">Newsletter</a></li>
-      <li><a href="#">Qui sommes-nous ?</a></li>
-      <li><a href="#">Applis mobile et tablette</a></li>
+      <li><a href="#">CONTACT</a></li>
+      <li><a href="#">NEWSLETTER</a></li>
+      <li><a href="#">QUI SOMMES NOUS</a></li>
+      <li><a href="#">APPLICATION MOBILES & TABLETTES</a></li>
       <li><a href="#">FAQ</a></li>
     </ul>
   </footer>
