@@ -1,151 +1,172 @@
+/* code couleur : cream and sweet 
+#52352b ton chocolat
+#b38e81 ton latte
+#f4f4f7 ton crême
+#f2e8d5 ton vanille
+#e8d9b7 ton sucré
+https://colorffy.com/palettes/ieBtfWEGQZguRkp6dHvW */
+
+@import url('https://fonts.googleapis.com/css2?family=News+Cycle&family=Playfair+Display&family=Raleway&family=Unna&family=Yaldevi:wght@300;500&display=swap');
+
+
 /* FINAL */
-/***RESET***/
-* {
-    margin: 0px;
-    padding: 0px;
-    font-family: "Times New Roman", Times, serif;
-  }
+/*retire la marge interieur entre le html et le body*/
+html, body {
+  margin:0;
+  padding:0;
+  background: #f4f4f7;
+}
   
-  /* Navigation */
-  .img {
-    height: 90%;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
+  /*debut du header barre de navigation*/
+.navigation{
+  padding-top: 1em;
+  display: flex;
+  justify-content: space-between;
+  background-color: #b38e81;
+  box-shadow: 0px 3px 8px rgba(48, 48, 48, 0.295);
+}
   
-  .navigation {
-    display: flex;
-    width: 100%;
-    height: 10vh;
-    background-color: #305a47;
-  }
+.logo {
+  padding-left: 5px;
+  height: 9vh;
+}
   
-  .logo {
-    display: flex;
-    align-items: center;
-    padding-left: 5px;
-    width: 50%;
-    height: 10vh;
-  }
+.buttons{
+  margin-right: 5em;
+}
+
+/* FIN NAVIGATION */
+
+/* GESTION DES BOUTONS*/
+button{
+  background: #52352b;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+  margin: 5px;
+  border: 1px solid #52352b;
+}
   
-  .buttons {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
+button a{
+  color: #f4f4f7;
+}
   
-  .buttons button {
-    border: none;
-    background-color: #305a47;
-    padding: 5px 15px;
-    margin: 10px;
-  }
+button:hover{
+  background: rgb(59, 25, 25);;
+  color: white;
+}
   
-  .aAjouter,
-  .aStock {
-    font-size: 1.2em;
-    text-decoration: none;
-    color: white;
-  }
+a:link { 
+  text-decoration:none; 
+} 
+
+/* FIN BOUTON*/
   
-  .aAjouter:hover,
-  .aStock:hover {
-    color: #b1b3b6;
-  }
+.bienvenue{
+  height: 25vh;
+}
+
+/* PAGE 1 */
+/* H1 et H3 */
   
-  /* FIN NAVIGATION */
+h1{
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+  font-size: 4rem;
+  color: #52352b;
+}
+
+h2{
+  display: flex;
+  justify-content: center;
+  margin-top: -2em;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #52352b;
+
+}
+
+h3{
+  display: flex;
+  justify-content: center;
+  margin-top: 3em;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #52352b;
+}
   
-  /* PAGE 1 */
-  /* H1 et H3 */
-  .bienvenue {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .h1,
-  .h3 {
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    color: #305a47;
-  }
-  
-  /* Fin H1 et H3 */
-  /* Formulaire */
-  .formulaire {
-    margin: 20px;
-    background-color: #305a4717;
-  }
-  
-  form {
-    margin: 20px;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  
-  
-  
-  
+/* Fin H1 et H3 */
+/* Formulaire */
   
   
+form input{
+  margin: 1em;
+  width: 30em;
+  padding: 10px;
+
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
   
+/* DEUX BUTTON VALIDER ET ANNULER */
+.valEtAn {
+  display: flex;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  justify-content: center;
+}
   
+/* FIN PAGE 1 */
+/* footer */
+
+.mainFooter {
+  background-color: #b38e81;
+  padding: 5px;
+  height: 10em;
+}
+
+.liensFooter{
+  display: flex;
+  justify-content: center;
+}
+
+.liensFooter a {
+  display: flex;
+  color: #fff;
+  text-decoration: none;
+  font-family: "News Cycle";
+}
   
+.liensFooter a:hover {
+  color: #b1b3b6;
+
+}
   
+.liensFooter li {
+  text-align: center;
+  display: inline;
+  padding: 0 1em;
+}
   
-  /* DEUX BUTTON VALIDER ET ANNULER */
-  .valEtAn {
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
-  
-  /* FIN PAGE 1 */
-  /* footer */
-  .fixe {
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10vh;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    /*
-      en indiquant une largeur 100%
-      on aura la largeur du parent #wrapper
-      et le footer ne prendra pas toute la largeur
-      de l'écrane
-      le repère de la position fixe étant l'écran
-      en indiquant left:0 et right:0
-      on n'a pas besoin de spécifier la taille
-      */
-  }
-  
-  .mainFooter {
-    background-color: #305a47;
+/*fin footer*/
+
+/*MEDIA SCREEN REPONSIVE ZRJFQEK RHERJ*/
+@media screen and (max-width: 500px) {
+
+  .mainFooter{
+    background-color: #b38e81;
     padding: 5px;
-    font-size: 1em;
-    color: #fff;
-    text-align: center;
+    height: 10em;
+}
   }
-  
-  .liensFooter a {
-    color: #fff;
-    text-decoration: none;
+
+  .liensFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .liensFooter a:hover {
-    color: #b1b3b6;
-  }
-  
-  .liensFooter li {
-    text-align: center;
-    display: inline;
-    padding: 0 1em;
-  }
-  
-  /*fin footer*/
